@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import MenuItemLevel1 from "./MenuItemLevel1";
-import BlockPlaceholder from "@/components/BlockPlaceholder";
 
 type Props = {
   menus?: MenuListItem[];
@@ -12,26 +11,23 @@ type Props = {
   pagePostSlug?: string;
 };
 
-const DesktopMenu = ({ webInfos, menus, pagePostSlug }: Props) => {
+const DesktopMenu = ({ menus, pagePostSlug }: Props) => {
   return (
-    <div className="container mx-auto flex h-full flex-grow justify-center lg:justify-between">
-      <div className="flex h-full items-center justify-center pl-32 lg:ml-0">
-        {webInfos?.SITE_SETTING?.logoHeader?.src ? (
-          <Link href={"/"}>
-            <Image
-              src={webInfos?.SITE_SETTING?.logoHeader?.src}
-              className="h-16 max-w-48 w-fit object-contain"
-              alt="logo"
-              height={webInfos?.SITE_SETTING?.logoHeader?.height || 64}
-              width={webInfos?.SITE_SETTING?.logoHeader?.width || 64}
-              priority
-            />
-          </Link>
-        ) : (
-          <BlockPlaceholder text="logo" className="h-10 w-40" />
-        )}
+    <div className="container flex h-full flex-grow justify-center lg:justify-between">
+      <div className="flex h-full items-center justify-center xl:px-28 lg:px-5">
+        <Link href={"/"}>
+          <Image
+            src="/images/Logo horizontal white.png"
+            className="h-24 w-fit max-w-60 object-contain"
+            alt="logo"
+            height={200}
+            width={500}
+            priority
+          />
+        </Link>
       </div>
-      <div className="hidden flex-1 items-center justify-center gap-4 lg:flex">
+
+      <div className="hidden items-center justify-center gap-8 xl:gap-10 lg:flex pr-3">
         {menus?.map((item) => (
           <MenuItemLevel1
             key={item.id}

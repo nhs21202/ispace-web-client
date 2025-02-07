@@ -3,9 +3,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { PropsWithChildren } from "react";
 import "./globals.css";
-import CustomScript from "@/components/CustomScript";
 import AllProvider from "@/components/AllProvider";
-
+import React from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const generateMetadata = async (): Promise<Metadata> => {
@@ -21,18 +20,13 @@ export const generateMetadata = async (): Promise<Metadata> => {
 };
 
 const RootLayout = async ({ children }: Readonly<PropsWithChildren>) => {
-  const webInfos = await getServerWebSettings();
-
   return (
     <html lang="en">
-      <head>
-        <CustomScript scrips={webInfos?.CUSTOM_CODE?.head} />
-      </head>
+      <head></head>
       <body
         className={`${inter.className} flex min-h-screen flex-col overflow-x-hidden`}
       >
         <AllProvider>{children}</AllProvider>
-        <CustomScript scrips={webInfos?.CUSTOM_CODE?.body} />
       </body>
     </html>
   );

@@ -3,7 +3,6 @@ import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import MenuItemLevel3 from "./MenuItemLevel3";
 import { cn } from "@/utilities/helper/common.helper";
-import { getLinkRefOfMenuItem } from "@/utilities/helper/menu.helper";
 import LinkWrap from "@/components/LinkWrap";
 
 type Props = {
@@ -13,12 +12,10 @@ type Props = {
 };
 
 const MenuItemLevel2 = ({ item, parentMenu, pagePostSlug }: Props) => {
-  const link = getLinkRefOfMenuItem({ item, pagePostSlug, parentMenu });
-
   return (
     <div className="group/level2 relative flex min-w-48 cursor-pointer items-center gap-2 bg-white p-3 text-black hover:bg-slate-100">
       <LinkWrap
-        href={link}
+        href={item?.link || ""}
         className="relative"
         target={item.linkType === MENU_LINK_TYPE.EXTERNAL ? "_blank" : ""}
       >

@@ -22,10 +22,6 @@ const MobileMenu = ({ menus, pagePostSlug }: Props) => {
 
   return (
     <div className="lg:hidden">
-      <div className="flex h-full cursor-pointer items-center justify-between hover:text-slate-300">
-        <FaBars className="h-8 w-8" onClick={() => setOpenSideBar(true)} />
-      </div>
-
       <div
         className={cn("fixed inset-0 z-30 flex h-full duration-100", {
           "translate-x-0 opacity-100": openSideBar,
@@ -53,6 +49,9 @@ const MobileMenu = ({ menus, pagePostSlug }: Props) => {
           className="h-screen w-screen bg-black/50"
           onClick={() => setOpenSideBar(false)}
         ></div>
+      </div>
+      <div className="flex h-full cursor-pointer items-center justify-between text-white hover:text-purple-200">
+        <FaBars className="h-8 w-8" onClick={() => setOpenSideBar(true)} />
       </div>
     </div>
   );

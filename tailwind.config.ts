@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#ff00000", // TODO [config] change color primary7
+        primary: "#1f3e99", // TODO [config] change color primary7
         secondary: "#ffffff", // TODO [config] change color secondary
       },
     },

@@ -31,6 +31,7 @@ export enum PAGE_KEY {
    */
   ABOUT = "about",
   CONTACT = "contact",
+  RECRUIT = "recruit"
 }
 
 const folderKeyMap: Record<string, string> = {
@@ -39,6 +40,7 @@ const folderKeyMap: Record<string, string> = {
   [PAGE_KEY.PRODUCT]: "product",
   [PAGE_KEY.CONTACT]: "contact",
   [PAGE_KEY.ABOUT]: "about",
+  [PAGE_KEY.RECRUIT]: "recruit"
 };
 
 export const getFolderNameByPageKey = (pageKey: string) => {

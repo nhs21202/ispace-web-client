@@ -3,7 +3,6 @@ import React from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import MenuItemLevel2 from "./MenuItemLevel2";
 import { cn } from "@/utilities/helper/common.helper";
-import { getLinkRefOfMenuItem } from "@/utilities/helper/menu.helper";
 import LinkWrap from "@/components/LinkWrap";
 
 type Props = {
@@ -12,21 +11,20 @@ type Props = {
 };
 
 const MenuItemLevel1 = ({ item, pagePostSlug }: Props) => {
-  const link = getLinkRefOfMenuItem({ item, pagePostSlug });
 
   return (
     <div className="group/level1 relative flex h-full cursor-pointer items-center gap-2">
       <div className="relative">
         <LinkWrap
-          href={link}
+          href={item?.link ||""}
           className="relative"
           target={item.linkType === MENU_LINK_TYPE.EXTERNAL ? "_blank" : ""}
         >
-          <p className="font-bold uppercase italic">{item.title}</p>
+          <p className="font-bold uppercase text-white text-lg">{item.title}</p>
         </LinkWrap>
         <div className="absolute w-0 border-b-2 border-b-white opacity-0 duration-300 group-hover/level1:w-full group-hover/level1:opacity-100"></div>
       </div>
-      {item.children?.length ? <IoIosArrowDown className="h-3 w-3" /> : null}
+      {item.children?.length ? <IoIosArrowDown className="h-3 w-3 text-white" /> : null}
       {!!item.children?.length && (
         <div
           className={cn(
