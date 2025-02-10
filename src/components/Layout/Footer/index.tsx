@@ -4,7 +4,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect } from "react";
-import menus from "../Header/menus";
+import menus from "@/mocks/menus";
 
 const Footer = () => {
   useEffect(() => {
