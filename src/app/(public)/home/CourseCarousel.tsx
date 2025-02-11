@@ -15,7 +15,7 @@ const CourseCarousel = () => {
   return (
     <div className="py-10">
       <ComponentTitle title="KHÓA HỌC ĐA DẠNG PHÙ HỢP VỚI MỌI LỨA TUỔI" />
-      <div className="relative bg-primary p-10 mt-5">
+      <div className="relative mt-5 bg-primary p-10">
         <Swiper
           spaceBetween={30}
           slidesPerView={3}
@@ -26,7 +26,7 @@ const CourseCarousel = () => {
         >
           {courses.map((course) => (
             <SwiperSlide key={course.id}>
-              <div className="overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
+              <div className="flex h-[500px] flex-col overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
                 <Image
                   src={course.image}
                   width={500}
@@ -34,16 +34,20 @@ const CourseCarousel = () => {
                   alt={course.title}
                   className="h-64 w-full object-cover transition-transform duration-300 hover:scale-105"
                 />
-                <div className="flex flex-col items-center justify-center p-10">
+                <div className="flex flex-1 flex-col p-5">
                   <h3 className="text-center text-xl font-bold uppercase text-primary">
                     {course.title}
                   </h3>
-                  <p className="text-center mt-2 text-base">{course.description}</p>
-                  <ReadmoreButton
-                    href={course.link}
-                    className="mt-4 w-60 hover:w-64"
-                    title="Xem chương trình"
-                  />
+                  <p className="mt-2 text-center text-base">
+                    {course.description}
+                  </p>
+                  <div className=" flex justify-center items-center">
+                    <ReadmoreButton
+                      href={course.link}
+                      className="w-60 hover:w-64"
+                      title="Xem chương trình"
+                    />
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
