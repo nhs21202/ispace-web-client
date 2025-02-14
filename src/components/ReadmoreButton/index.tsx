@@ -7,7 +7,7 @@ import { HiOutlineArrowSmallRight } from 'react-icons/hi2';
 type Props = {
   href: string;
   className?: string;
-  title?:string;
+  title?: string;
 };
 
 const ReadmoreButton = ({ href, className, title }: Props) => {
@@ -15,14 +15,14 @@ const ReadmoreButton = ({ href, className, title }: Props) => {
     <Link
       href={href}
       className={cn(
-        "group relative mt-10 flex items-center justify-start rounded-full bg-primary p-3 text-white transition-all duration-300 ease-in-out",
+        "group relative mt-10 flex items-center justify-start rounded-full bg-white border border-primary p-3 text-primary transition-all duration-300 hover:bg-primary hover:text-white",
         className
       )}
     >
-      <span className="flex-grow transform px-3 text-base font-bold transition-all duration-300 ease-in-out group-hover:translate-x-6 group-hover:text-white">
+      <span className="flex-grow transform px-3 text-base font-bold transition-all duration-300 ease-in-out">
         {title || "Tìm hiểu thêm"}
       </span>
-      <span className="absolute right-0 flex items-center justify-center rounded-full border border-white bg-red-500 px-4 py-2 transition-all duration-300 ease-in-out group-hover:translate-x-8 group-hover:opacity-0 group-hover:text-white">
+      <span className="absolute right-0 flex items-center justify-center rounded-full border border-primary bg-primary px-4 py-2 text-white transition-all duration-500 group-hover:-translate-x-44   group-hover:opacity-0">
         <HiOutlineArrowSmallRight size={30} />
       </span>
     </Link>

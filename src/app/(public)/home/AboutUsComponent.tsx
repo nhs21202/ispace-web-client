@@ -41,7 +41,7 @@ const AboutUsComponent = () => {
               GV Việt Nam, GV Chủ nhiệm & GV Trợ giảng
             </li>
           </ul>
-          <ReadmoreButton href="about" className="w-52 hover:w-56"/>
+          <ReadmoreButton href="about" className="w-52"/>
         </div>
       </div>
     </div>

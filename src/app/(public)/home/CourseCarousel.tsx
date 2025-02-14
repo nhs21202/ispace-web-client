@@ -44,7 +44,7 @@ const CourseCarousel = () => {
                   <div className=" flex justify-center items-center">
                     <ReadmoreButton
                       href={course.link}
-                      className="w-60 hover:w-64"
+                      className="w-60"
                       title="Xem chương trình"
                     />
                   </div>

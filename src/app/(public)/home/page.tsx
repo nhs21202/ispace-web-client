@@ -6,7 +6,7 @@ import CourseCarousel from "./CourseCarousel";
 import ConsultationRegister from "./ConsultationRegister";
 import TeacherCarousel from "./TeacherCarousel";
 import VideoList from "./VideoList";
-
+import NewsList from "./NewsList"
 
 const HomePage = () => {
   return (
@@ -22,6 +22,9 @@ const HomePage = () => {
         <TeacherCarousel/>
       </div>
       <VideoList/>
+      <div className="container mx-auto px-4 mb-10 flex flex-col gap-10">
+        <NewsList/>
+      </div>
     </div>
   );
 };

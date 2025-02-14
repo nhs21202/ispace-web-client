@@ -2,7 +2,7 @@
 
 import { Button } from "antd";
 import Link from "next/link";
-
+import React from "react";
 const NotFoundPage = () => {
   return (
     <div className="flex h-screen w-screen flex-col items-center justify-center gap-3">
