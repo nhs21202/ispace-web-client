@@ -43,7 +43,7 @@ const HeaderDetails = ({ pagePostSlug, menus, webInfos }: Props) => {
           "hidden md:block": isHidden,
         })}
       >
-        <div className="container mx-auto text-primary font-bold mx-auto flex h-full items-center justify-between gap-10 px-5 md:justify-start md:px-0">
+        <div className="container text-primary font-bold mx-auto flex h-full items-center justify-between gap-10 px-5 md:justify-start md:px-0">
             
           <div className="flex items-center gap-2">
             <TfiHeadphoneAlt />

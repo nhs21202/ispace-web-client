@@ -2,6 +2,7 @@
 
 import { Button } from "antd";
 import Link from "next/link";
+import React from "react";
 
 const ErrorPage = ({ error }: { error: Error & { digest?: string } }) => {
   const errorMessage = error?.message;
