@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import ReadmoreButton from "@/components/ReadmoreButton";
-import ComponentTitle from "./ComponentTitle";
+import ComponentTitle from "@/components/ComponentTitle";
 
 const AboutUsComponent = () => {
   return (

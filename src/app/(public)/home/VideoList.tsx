@@ -5,7 +5,7 @@ import ReactPlayer from "react-player";
 import { IoPlayCircleSharp } from "react-icons/io5";
 import React from "react";
 import { videos } from "@/mocks/videos";
-import ComponentTitle from "./ComponentTitle";
+import ComponentTitle from "@/components/ComponentTitle";
 
 const VideoList = () => {
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);

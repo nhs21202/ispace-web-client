@@ -19,10 +19,10 @@ const ReadmoreButton = ({ href, className, title }: Props) => {
         className
       )}
     >
-      <span className="flex-grow transform px-3 text-base font-bold transition-all duration-300 ease-in-out">
+      <span className="flex-grow px-3 text-base font-bold transition-all duration-500 ease-in-out transform group-hover:translate-x-5">
         {title || "Tìm hiểu thêm"}
       </span>
-      <span className="absolute right-0 flex items-center justify-center rounded-full border border-primary bg-primary px-4 py-2 text-white transition-all duration-500 group-hover:-translate-x-44   group-hover:opacity-0">
+      <span className="absolute right-0 flex items-center justify-center rounded-full border border-primary bg-primary px-4 py-2 text-white transition-all duration-500 transform group-hover:-translate-x-36 group-hover:opacity-0">
         <HiOutlineArrowSmallRight size={30} />
       </span>
     </Link>

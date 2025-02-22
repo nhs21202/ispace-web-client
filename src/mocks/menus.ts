@@ -31,6 +31,24 @@ const menus: MenuListItem[] = [
         linkType: MENU_LINK_TYPE.SECTION,
         link: "/about#phuong-phap-giang-day",
       },
+      {
+        id: 15,
+        title:"Cơ sở vật chất",
+        linkType: MENU_LINK_TYPE.SECTION,
+        link: "/about#co-so-vat-chat",
+      },
+      {
+        id: 16,
+        title: "Kiểm soát chất lượng",
+        linkType: MENU_LINK_TYPE.SECTION,
+        link: "/about#kiem-soat-chat-luong",
+      },
+      {
+        id: 17,
+        title: "Đội ngũ giáo viên",
+        linkType: MENU_LINK_TYPE.SECTION,
+        link: "/about#doi-ngu-giao-vien",
+      },
     ],
   },
   {
@@ -67,7 +85,7 @@ const menus: MenuListItem[] = [
   },
   {
     id: 3,
-    title: "Tin tức",
+    title: "Tin tức & Thư viện",
     linkType: MENU_LINK_TYPE.PAGE,
     link: "/news",
   },

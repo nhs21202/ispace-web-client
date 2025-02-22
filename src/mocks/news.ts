@@ -1,7 +1,7 @@
 export const newsData = [
   {
     id: 1,
-    imageUrl: "images/banner2.jpg",
+    imageUrl: "/images/thumbnail2.jpg",
     title: "Công nghệ AI đang thay đổi thế giới",
     overview: "Trí tuệ nhân tạo đang ảnh hưởng đến nhiều ngành công nghiệp.",
     content:
@@ -10,7 +10,7 @@ export const newsData = [
   },
   {
     id: 2,
-    imageUrl: "images/banner2.jpg",
+    imageUrl: "/images/thumbnail2.jpg",
     title: "Blockchain và tiềm năng phát triển",
     overview: "Công nghệ blockchain mang lại sự minh bạch và bảo mật cao.",
     content:
@@ -19,7 +19,7 @@ export const newsData = [
   },
   {
     id: 3,
-    imageUrl: "images/banner2.jpg",
+    imageUrl: "/images/thumbnail2.jpg",
     title: "Thị trường tiền điện tử biến động mạnh",
     overview: "Bitcoin và các đồng tiền số khác đang có biến động lớn.",
     content:
@@ -28,7 +28,7 @@ export const newsData = [
   },
   {
     id: 4,
-    imageUrl: "images/banner2.jpg",
+    imageUrl: "/images/thumbnail2.jpg",
     title: "Tương lai của xe điện",
     overview:
       "Xe điện đang dần trở thành xu hướng chính trong ngành công nghiệp ô tô.",
@@ -38,7 +38,7 @@ export const newsData = [
   },
   {
     id: 5,
-    imageUrl: "images/banner2.jpg",
+    imageUrl: "/images/thumbnail2.jpg",
     title: "Metaverse – thế giới ảo mới",
     overview: "Metaverse đang được nhiều công ty công nghệ đầu tư phát triển.",
     content:
@@ -47,7 +47,7 @@ export const newsData = [
   },
   {
     id: 6,
-    imageUrl: "images/banner2.jpg",
+    imageUrl: "/images/thumbnail2.jpg",
     title: "Lập trình viên nên học gì năm 2025?",
     overview: "Những ngôn ngữ và công nghệ nào sẽ chiếm ưu thế trong năm 2025?",
     content:

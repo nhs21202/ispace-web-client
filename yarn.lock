@@ -1618,7 +1618,7 @@ __metadata:
     react-router-dom: "npm:^6.27.0"
     react-timer-hook: "npm:^3.0.8"
     sharp: "npm:^0.33.5"
-    swiper: "npm:^11.2.2"
+    swiper: "npm:^11.2.4"
     tailwind-merge: "npm:^2.5.2"
     tailwindcss: "npm:^3.4.1"
     typescript: "npm:^5"
@@ -6010,10 +6010,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"swiper@npm:^11.2.2":
-  version: 11.2.2
-  resolution: "swiper@npm:11.2.2"
-  checksum: 10c0/1edb67949c5957877f3c30370e0eb188bbf044f80e482376db97b1923f7f7c07e41f84bb0dacae766c77f01ee6be1b4cab839ec1dd3811adebd7ce36d00571bf
+"swiper@npm:^11.2.4":
+  version: 11.2.4
+  resolution: "swiper@npm:11.2.4"
+  checksum: 10c0/911c405a2d7feae9ac59d8b6683c40e50f6f5be8ca5c5e44673647c37e319a564417b813dc79a09da034e8fe927b2883253fe72cd8efecfcc09247f669fd5a30
   languageName: node
   linkType: hard
 
